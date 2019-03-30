@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_excel('Data.xlsx',sheet_name=0)
+mylist = df['Weight'].tolist()
+mylist1 = df['Height'].tolist()
+plt.plot(mylist,mylist1)
+plt.show()
+plt.clf()
+plt.scatter(mylist,mylist1)
+plt.show()
+plt.clf()
+mylist2 = df['y'].tolist()
+plt.plot(mylist,mylist1,color="orange")
+plt.show()
+plt.clf()
